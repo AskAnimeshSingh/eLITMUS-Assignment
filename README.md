@@ -51,3 +51,12 @@ for Backend the architecture will look like --
 │                                   │                      │                                      │
 │       API Server & Database       │                      │            Cloud Storage             │
 └───────────────────────────────────┘                      └──────────────────────────────────────┘
+
+STEPS TO BE FOLLOWED TO RUN THIS CODES_
+1) create the frontend named as index.html
+2) create a css file named style.css
+3) add javascript link and add some javascript with file name script.js
+4) now create API and database (Mongodb) connection with file name index.js.(To create connection with database you need to install some JSON package by running commands in terminal, they are-- npm install express, npm install mongoose, ) 
+5) Make sure to install and keep running the Mongodb database.
+6) Test your API endpoints using a tool like Postman or a web browser.
+Deploy your backend to a server or hosting platform such as Heroku or AWS, if needed
