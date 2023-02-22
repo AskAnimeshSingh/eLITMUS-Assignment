@@ -14,6 +14,12 @@
 //Backend Implementation:
 //API Server: We can use any web framework to create the API server. In this, we will use Node.js and Express.js to create the API server.
 
+//Now that we have the mongoose module installed, we need to connect to the database in our app.js file. MongoDB, by default, runs on port 27017. You connect to the database by telling it the location of the database and the name of the database.
+
+//In our index.js file after the line for the port and before the app.use line, enter the following two lines to get access to mongoose and to connect to the database.
+//npm install mongoose
+//npm init
+
 const express = require('express');
 const app = express();
 const port = 3000;
