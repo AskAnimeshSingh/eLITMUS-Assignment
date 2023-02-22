@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#camera-feed {
+  margin: 20px auto;
+  max-width: 400px;
+  max-height: 300px;
+  overflow: hidden;
+  border: 1px solid black;
+}
