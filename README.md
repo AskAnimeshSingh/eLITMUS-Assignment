@@ -34,3 +34,20 @@ The backend will be responsible for storing all the related data and images. We 
 An admin dashboard will be provided to display all user information and stored images. The dashboard will have additional features such as image description, which will provide information on any object visible or not, multiple faces in the images, and whether the candidate's face is visible or not. If multiple person images are captured during images, flags should be shown in the dashboard. This will help the admin to quickly identify any anomalies during the test and take necessary actions.
 
 In summary, our proposed solution will include a Chrome extension that operates on assessment websites, a backend server to store all data and images, and an admin dashboard with additional features to display user information and stored images. This solution will help to prevent cheating during exams and provide a secure and reliable platform for assessment.
+
+
+for Backend the architecture will look like --
+
+                     ┌───────────┐            ┌──────────────┐
+                     │  Client   │            │  Admin       │
+                     │           │            │  Dashboard   │
+                     └────┬──────┘            └──────┬───────┘
+                          │                         │
+                          │ API                     │
+             ┌────────────┴─────────────────────────┴─────────────────┐
+             │                                                           │
+┌───────────────────────────────────┐                      ┌──────────────────────────────────────┐
+│            Backend                │                      │          Image Storage              │
+│                                   │                      │                                      │
+│       API Server & Database       │                      │            Cloud Storage             │
+└───────────────────────────────────┘                      └──────────────────────────────────────┘
